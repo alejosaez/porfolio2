@@ -88,7 +88,7 @@ export default function ContactPage() {
                     rel="noreferrer"
                     className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:border-accent/50"
                   >
-                    <span className="flex size-11 items-center justify-center rounded-lg border border-border bg-secondary/60 text-accent">
+                    <span className="flex size-11 items-center justify-center rounded-lg border border-border bg-secondary/60text-gray-400">
                       <channel.icon className="size-5" />
                     </span>
                     <div className="min-w-0 flex-1">
@@ -109,7 +109,7 @@ export default function ContactPage() {
           {/* Right - form */}
           <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
             <div className="flex items-start gap-4">
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/60 text-accent">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/60text-gray-400">
                 <MessageSquare className="size-5" />
               </span>
               <div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
               key={card.title}
               className="flex items-center gap-4 rounded-xl border border-border bg-card p-5"
             >
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/60 text-accent">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/60text-gray-400">
                 <card.icon className="size-5" />
               </span>
               <div>

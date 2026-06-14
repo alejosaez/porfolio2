@@ -17,9 +17,9 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: 'Niladri Chatterjee — Diseño y código para la web',
+  title: 'Alejo Saez — Diseño y código para la web',
   description:
-    'Portfolio de Niladri Chatterjee, desarrollador de software especializado en desarrollo Full Stack con Next.js, Node.js y tecnologías web modernas.',
+    'Portfolio de Alejo Saez, desarrollador de software especializado en desarrollo Full Stack con Next.js, Node.js y tecnologías web modernas.',
   generator: 'v0.app',
 }
 

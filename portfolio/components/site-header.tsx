@@ -17,7 +17,7 @@ export function SiteHeader() {
             <Code2 className="size-6" strokeWidth={2.5} />
           </span>
           <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            Niladri
+            Alejo
           </span>
         </Link>
 

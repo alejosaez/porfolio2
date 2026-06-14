@@ -32,8 +32,8 @@ export const categories: ProjectCategory[] = [
 
 export const projects: Project[] = [
   {
-    slug: 'tradeflow',
-    title: 'TradeFlow',
+    slug: 'catering',
+    title: 'Catering Service',
     category: 'Fullstack Development',
     shortDescription:
       'Plataforma de gestión de operaciones de comercio exterior para Banco Galicia. Desarrollo fullstack con Next.js, NestJS y microservicios.',
@@ -85,7 +85,7 @@ export const projects: Project[] = [
       'Diseño de flujos de automatización, integración de modelos de IA y conexión de múltiples servicios externos.',
     duration: 'Ene 2024 – Abr 2024 (4 meses)',
     client: 'Cliente privado',
-    images: ['/projects/chef3.png', '/projects/chef1.png'],
+    images: ['/projects/img-TechStore.jpeg', '/projects/img-TeachStore2.jpeg'],
     features: [
       'Flujos automatizados con n8n',
       'Integración con la API de WhatsApp',
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     roleDescription:
       'Diseño e implementación del servicio de autenticación, seguridad y despliegue serverless.',
     duration: 'Sep 2023 – Dic 2023 (4 meses)',
-    client: 'Proyecto propio',
+    client: 'Cliente privado',
     images: ['/projects/chef2.png',],
     features: [
       'Autenticación basada en JWT',
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     roleDescription:
       'Diseño de la arquitectura modular, modelado de datos e integración de pagos.',
     duration: 'Feb 2023 – May 2023 (4 meses)',
-    client: 'Proyecto propio',
+    client: 'Cliente privado',
     images: ['/projects/chef2.png', '/projects/chef3.png'],
     features: [
       'Gestión de productos y categorías',
@@ -194,13 +194,13 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'workflow-builder',
-    title: 'Workflow Builder',
+    slug: 'automatizacion-facturas',
+    title: 'Procesamiento Automático de Facturas',
     category: 'IA – n8n',
     shortDescription:
       'Constructor de workflows automatizados con n8n y Webhooks. Integración con servicios externos y base de datos.',
-    description:
-      'Constructor de workflows automatizados con n8n y Webhooks. Integración con servicios externos y base de datos.',
+  description:
+  'Desarrollé una solución de automatización para el procesamiento de facturas que permitía recibir documentos desde múltiples canales, extraer y validar información relevante, integrarla con sistemas externos y registrar los resultados en una base de datos centralizada. El objetivo fue reducir tareas manuales, minimizar errores operativos y acelerar el flujo de carga y validación de comprobantes mediante workflows automatizados en n8n.',
     tags: ['n8n', 'Webhooks', 'PostgreSQL', 'API'],
     liveUrl: '#',
     repoUrl: '#',
@@ -209,52 +209,142 @@ export const projects: Project[] = [
       'Diseño y construcción de workflows automatizados e integraciones mediante webhooks.',
     duration: 'Oct 2022 – Ene 2023 (4 meses)',
     client: 'Cliente privado',
-    images: ['/projects/chef1.png', '/projects/chef3.png'],
+    images: ['/projects/flow-n8n2.jpeg'],
     features: [
       'Workflows automatizados con n8n',
       'Integración mediante Webhooks',
       'Conexión con servicios externos',
       'Persistencia en base de datos',
     ],
-    about:
-      'Herramienta interna para construir y orquestar workflows automatizados utilizando n8n y webhooks, integrando distintos servicios externos y una base de datos central.',
+   about:
+  'Este proyecto surgió ante la necesidad de automatizar el tratamiento de facturas que eran procesadas manualmente por operadores. La solución permitió orquestar flujos de trabajo mediante n8n, recibir información a través de webhooks, validar datos, integrarse con APIs de terceros y almacenar los resultados en PostgreSQL. Gracias a la automatización se redujeron tiempos operativos, se mejoró la trazabilidad de los procesos y se disminuyeron errores humanos en la carga de información.',
     built: [
-      'Workflows configurables con n8n',
-      'Endpoints de webhooks para disparar procesos',
-      'Integración con base de datos y APIs',
-    ],
+  'Diseño y desarrollo de workflows automatizados en n8n',
+  'Implementación de webhooks para recepción y procesamiento de eventos',
+  'Integración con APIs externas para validación y enriquecimiento de datos',
+  'Persistencia de información y trazabilidad en PostgreSQL',
+  'Manejo de errores, reintentos y monitoreo de procesos automatizados',
+],
   },
-  {
-    slug: 'analytics-dashboard',
-    title: 'Analytics Dashboard',
-    category: 'Fullstack Development',
-    shortDescription:
-      'Dashboard de métricas y reportes en tiempo real. Frontend con Next.js y backend con NestJS.',
-    description:
-      'Dashboard de métricas y reportes en tiempo real. Frontend con Next.js y backend con NestJS.',
-    tags: ['Next.js', 'NestJS', 'PostgreSQL', 'WebSockets'],
-    liveUrl: '#',
-    repoUrl: '#',
-    role: 'Desarrollador Full Stack',
-    roleDescription:
-      'Desarrollo del frontend y backend, visualización de datos y actualizaciones en tiempo real.',
-    duration: 'Jun 2022 – Sep 2022 (4 meses)',
-    client: 'Proyecto propio',
-    images: ['/projects/chef3.png', '/projects/chef1.png'],
-    features: [
-      'Métricas y reportes en tiempo real',
-      'Visualización de datos con gráficos',
-      'Actualizaciones vía WebSockets',
-      'Frontend con Next.js y backend con NestJS',
-    ],
-    about:
-      'Dashboard de analítica que muestra métricas y reportes en tiempo real, con visualizaciones interactivas y actualizaciones en vivo mediante WebSockets.',
-    built: [
-      'Frontend de visualización con Next.js',
-      'Backend de agregación de datos con NestJS',
-      'Actualizaciones en tiempo real con WebSockets',
-    ],
-  },
+ {
+  slug: 'ecommerce-tecnologia',
+  title: 'E-commerce de Tecnología',
+  category: 'Fullstack Development',
+  shortDescription:
+    'Plataforma de comercio electrónico para la venta de productos tecnológicos con gestión de catálogo, promociones y experiencia de compra optimizada.',
+
+  description:
+    'Desarrollo Full Stack de una plataforma e-commerce orientada a la comercialización de productos tecnológicos, con catálogo dinámico, gestión de contenido y experiencia de compra responsive.',
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'NestJS',
+    'Node.js',
+    'PostgreSQL',
+  ],
+
+  liveUrl: '#',
+  repoUrl: '#',
+
+  role: 'Full Stack Developer',
+
+  roleDescription:
+    'Participación integral en el desarrollo del frontend, backend, APIs y base de datos, implementando funcionalidades comerciales y optimizando la experiencia de usuario.',
+
+  duration: 'Jun 2022 – Sep 2022 (4 meses)',
+
+  client: 'Cliente privado',
+
+  images: [
+    '/projects/img-TechStore.jpeg',
+    '/projects/img-TeachStore2.jpeg',
+  ],
+
+  features: [
+    'Catálogo de productos y categorías',
+    'Búsqueda y filtrado avanzado',
+    'Gestión de promociones y productos destacados',
+    'Diseño responsive para dispositivos móviles y escritorio',
+    'Panel de administración de contenido',
+    'APIs REST para gestión comercial',
+  ],
+
+  about:
+    'Desarrollo de una plataforma de comercio electrónico especializada en la venta de productos tecnológicos, diseñada para ofrecer una experiencia de compra moderna, rápida e intuitiva. La solución permite administrar de forma centralizada productos, categorías, promociones y contenido comercial, brindando una navegación optimizada y herramientas orientadas a mejorar la conversión y el engagement de los usuarios. Participé en todas las etapas del desarrollo, desde la construcción de la interfaz hasta la implementación de la lógica de negocio y la persistencia de datos.',
+
+  built: [
+    'Frontend desarrollado con React, TypeScript y Tailwind CSS',
+    'Backend REST construido con NestJS y Node.js',
+    'Modelado y administración de base de datos PostgreSQL',
+    'Implementación de búsqueda y filtrado de productos',
+    'Gestión de catálogo, promociones y contenido comercial',
+    'Optimización de rendimiento y arquitectura escalable',
+  ],
+},
+{
+  slug: 'cafe-natural',
+  title: 'Café Natural',
+  category: 'Fullstack Development',
+  shortDescription:
+    'Sitio web corporativo para cafetería con catálogo digital, menú online, formularios de contacto y suscripción a newsletter.',
+
+  description:
+    'Desarrollo Full Stack de un sitio web moderno para una cafetería especializada en desayunos, brunch y productos artesanales, orientado a fortalecer la presencia digital de la marca y mejorar la interacción con clientes.',
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'NestJS',
+    'Node.js',
+    'PostgreSQL',
+    'Nodemailer',
+  ],
+
+  liveUrl: '#',
+  repoUrl: '#',
+
+  role: 'Full Stack Developer',
+
+  roleDescription:
+    'Desarrollo integral del frontend y backend, implementación del catálogo digital, formularios de contacto, newsletter, APIs REST y persistencia de datos.',
+
+  duration: 'Feb 2023 – May 2023 (4 meses)',
+
+  client: 'Cliente privado',
+
+  images: [
+    '/projects/cafeimg-2.jpeg',
+
+  ],
+
+  features: [
+    'Sitio web responsive para cafetería',
+    'Catálogo digital de productos',
+    'Menú online con categorías',
+    'Promociones y productos destacados',
+    'Formulario de contacto',
+    'Suscripción a newsletter',
+    'Integración con servicio de mailing',
+    'Gestión de contenido desde backend',
+  ],
+
+  about:
+    'Desarrollo de un sitio web moderno para una cafetería especializada en desayunos, brunch y productos artesanales. El objetivo principal fue fortalecer la presencia digital de la marca, presentar su propuesta gastronómica y facilitar el descubrimiento de productos mediante una experiencia visual cálida, atractiva e intuitiva. La plataforma incluye secciones informativas, menú digital, categorías de productos, promociones destacadas y formularios de contacto orientados a captar potenciales clientes.',
+
+  built: [
+    'Frontend desarrollado con React, TypeScript y Tailwind CSS',
+    'Diseño responsive optimizado para mobile y desktop',
+    'Backend desarrollado con NestJS, Node.js y TypeScript',
+    'APIs REST para gestión de contenido y productos',
+    'Modelado y administración de base de datos PostgreSQL',
+    'Implementación de formularios de contacto y newsletter',
+    'Integración de Nodemailer para envío de comunicaciones',
+    'Optimización de rendimiento, experiencia de usuario y posicionamiento web',
+  ],
+},
   {
     slug: 'chat-app',
     title: 'Chat App',
@@ -270,7 +360,7 @@ export const projects: Project[] = [
     roleDescription:
       'Desarrollo de la aplicación de mensajería, conexión en tiempo real y notificaciones.',
     duration: 'Feb 2022 – May 2022 (4 meses)',
-    client: 'Proyecto propio',
+    client: 'Cliente privado',
     images: ['/projects/', '/projects/chef2.png'],
     features: [
       'Mensajería en tiempo real',

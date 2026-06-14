@@ -10,7 +10,7 @@ export function ProjectCard({ project }: { project: Project }) {
       className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent/50 hover:bg-card/80"
     >
       <div className="flex items-start justify-between">
-        <span className="flex size-12 items-center justify-center rounded-xl border border-border bg-secondary/60 text-accent">
+        <span className="flex size-12 items-center justify-center rounded-xl border border-border bg-secondary/60text-gray-400">
           <CategoryIcon category={project.category} className="size-5" />
         </span>
         <span className="rounded-md border border-border bg-secondary/60 px-2 py-1 text-[11px] font-medium text-muted-foreground">

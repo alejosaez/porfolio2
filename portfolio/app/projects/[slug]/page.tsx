@@ -45,7 +45,7 @@ export default async function ProjectDetailPage({
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
           {/* Main */}
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1 text-xs font-medium text-accent">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1 text-xs font-mediumtext-gray-400">
               <Code2 className="size-3.5" />
               {project.category}
             </span>
@@ -56,24 +56,7 @@ export default async function ProjectDetailPage({
               {project.description}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              {project.liveUrl && (
-                <Button asChild variant="secondary" className="rounded-lg">
-                  <a href={project.liveUrl} target="_blank" rel="noreferrer">
-                    <Globe className="size-4" />
-                    Live Demo
-                  </a>
-                </Button>
-              )}
-              {project.repoUrl && (
-                <Button asChild variant="secondary" className="rounded-lg">
-                  <a href={project.repoUrl} target="_blank" rel="noreferrer">
-                    <Code2 className="size-4" />
-                    GitHub Repo
-                  </a>
-                </Button>
-              )}
-            </div>
+         
 
             <div className="mt-8">
               <ProjectGallery images={project.images} title={project.title} />
@@ -122,7 +105,7 @@ export default async function ProjectDetailPage({
                       key={feature}
                       className="flex items-start gap-2 text-sm text-muted-foreground"
                     >
-                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-accent" />
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0text-gray-400" />
                       {feature}
                     </li>
                   ))}
@@ -176,7 +159,7 @@ function InfoBlock({
   return (
     <div>
       <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
-        <Icon className="size-4 text-accent" />
+        <Icon className="size-4text-gray-400" />
         {label}
       </div>
       <div className="mt-2.5">{children}</div>

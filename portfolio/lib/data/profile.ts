@@ -1,20 +1,21 @@
 export const profile = {
-  name: 'Niladri Chatterjee',
-  firstName: 'Niladri',
+  name: 'Alejo Saez',
+  firstName: 'Alejo',
   role: 'Full Stack Developer',
   tagline: 'Diseño y código para la web',
   shortBio:
     'Desarrollador de software especializado en desarrollo Full Stack con experiencia en Next.js, Node.js y tecnologías web modernas.',
   longBio:
     'Disfruto convertir ideas en productos reales. Apasionado por el código limpio, la resolución de problemas y la construcción de experiencias digitales significativas.',
-  location: 'India (Disponible para trabajo remoto)',
-  email: 'code.niladri@gmail.com',
-  github: 'github.com/niladri-dev',
-  githubUrl: 'https://github.com/niladri-dev',
-  linkedin: 'linkedin.com/in/niladri-chatterjee',
-  linkedinUrl: 'https://linkedin.com/in/niladri-chatterjee',
-  whatsapp: '+91 91234 56789',
-  whatsappUrl: 'https://wa.me/919123456789',
+  location: 'La Plata (Disponible para trabajo remoto)',
+  email: 'alejosaezgebicki@gmail.com',
+  github: 'github.com/alejosaez',
+  githubUrl: 'https://github.com/alejosaez',
+  linkedin: 'linkedin.com/in/alejo-saez-gebicki/',
+  linkedinUrl: 'https://www.linkedin.com/in/alejo-saez-gebicki/',
+  whatsapp: '+54 9 2241587061 (ARG)',
+  whatsappUrl:
+    'https://wa.me/5492241587061?text=Hola%20Alejo,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.',
   avatar: '/profile.png',
 }
 
@@ -39,10 +40,10 @@ export const education = [
     detail: 'CGPA: 8.32 / 10.00',
   },
   {
-    period: '2018 – 2020',
-    title: 'Educación Secundaria Superior (12.º)',
+    period: '2013 – 2019',
+    title: 'Educación Secundaria Superior (Economia y Administración. Tecnico en computación)',
     institution: 'West Bengal Council of Higher Secondary Education',
-    detail: 'Porcentaje: 84.6%',
+    detail: 'Porcentaje: 100.0%',
   },
 ]
 
@@ -80,7 +81,7 @@ export const skillGroups = [
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Express', 'NestJS', 'REST APIs', 'GraphQL'],
+    skills: ['Node.js', 'Express', 'NestJS', 'REST APIs', 'GraphQL','Java','Python'],
   },
   {
     category: 'Base de datos',
@@ -92,6 +93,6 @@ export const skillGroups = [
   },
   {
     category: 'Otros',
-    skills: ['JavaScript', 'TypeScript', 'Prisma', 'JWT', 'Zod'],
+    skills: ['JavaScript', 'TypeScript', 'Prisma', 'JWT', 'Zod', 'talwindcss', 'n8n', 'IA'],
   },
 ]

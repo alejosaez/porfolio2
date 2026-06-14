@@ -1,14 +1,14 @@
-import Link from 'next/link'
-import { FileDown, User, MessageCircle, Triangle } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
-import { profile } from '@/lib/data/profile'
+import Link from "next/link";
+import { FileDown, User, MessageCircle, Triangle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GithubIcon, LinkedinIcon } from "@/components/brand-icons";
+import { profile } from "@/lib/data/profile";
 
 const heroStats = [
-  { value: '20+', label: 'Proyectos en GitHub', icon: GithubIcon },
-  { value: '1500+', label: 'Seguidores en LinkedIn', icon: LinkedinIcon },
-  { value: '24×7', label: 'WhatsApp', icon: MessageCircle },
-]
+  { value: "20+", label: "Proyectos en GitHub", icon: GithubIcon },
+  { value: "1500+", label: "Seguidores en LinkedIn", icon: LinkedinIcon },
+  { value: "24×7", label: "WhatsApp", icon: MessageCircle },
+];
 
 export default function HomePage() {
   return (
@@ -26,12 +26,12 @@ export default function HomePage() {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-          <Button asChild size="lg" className="rounded-full px-6 font-semibold">
-            <a href="#" download>
-              <FileDown className="size-4" />
-              Descargar CV
-            </a>
-          </Button>
+       <Button asChild size="lg" className="rounded-full px-6 font-semibold">
+  <a href="/projects/alejo.pdf" download="Alejo-Saez-CV.pdf">
+    <FileDown className="size-4" />
+    Descargar CV
+  </a>
+</Button>
           <Button
             asChild
             size="lg"
@@ -70,5 +70,5 @@ export default function HomePage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

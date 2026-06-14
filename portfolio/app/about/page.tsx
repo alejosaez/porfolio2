@@ -35,7 +35,7 @@ export default function AboutPage() {
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         {/* Intro */}
         <div className="flex flex-col justify-center">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1 text-xs font-medium text-accent">
+          <span className="inline-flex w-fit text-gray-400 items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1 text-xs font-medium ">
             <UserRound className="size-3.5" />
             Sobre mí
           </span>
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="mt-10 grid grid-cols-3 gap-4">
             {heroStats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-1.5">
-                <stat.icon className="size-5 text-accent" />
+               <stat.icon className="size-5 text-gray-400" />
                 <span className="font-display text-2xl font-bold text-foreground">
                   {stat.value}
                 </span>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               <h2 className="font-display text-xl font-bold text-foreground">
                 {profile.name}
               </h2>
-              <p className="text-sm font-medium text-accent">{profile.role}</p>
+              <p className="text-sm text-gray-500 font-medium ">{profile.role}</p>
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   key={i}
                   className="flex items-center gap-3 text-sm text-muted-foreground"
                 >
-                  <row.icon className="size-4 shrink-0 text-accent" />
+                  <row.icon className="size-4 shrink-0text-gray-400" />
                   <span className="truncate">{row.value}</span>
                 </li>
               ))}
@@ -107,7 +107,7 @@ export default function AboutPage() {
         {/* Education */}
         <section className="rounded-2xl border border-border bg-card p-6 sm:p-7">
           <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-foreground">
-            <GraduationCap className="size-5 text-accent" />
+            <GraduationCap className="size-5text-gray-400" />
             Educación
           </h3>
           <ol className="mt-6 flex flex-col gap-7">
@@ -134,7 +134,7 @@ export default function AboutPage() {
         {/* Experience */}
         <section className="rounded-2xl border border-border bg-card p-6 sm:p-7">
           <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-foreground">
-            <Briefcase className="size-5 text-accent" />
+            <Briefcase className="size-5text-gray-400" />
             Experiencia
           </h3>
           <ol className="mt-6 flex flex-col gap-7">
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 <h4 className="mt-1 text-sm font-semibold leading-snug text-foreground">
                   {item.title}
                 </h4>
-                <p className="text-xs font-medium text-accent">{item.company}</p>
+                <p className="text-xs font-mediumtext-gray-400">{item.company}</p>
                 <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
@@ -162,7 +162,7 @@ export default function AboutPage() {
         {/* Skills */}
         <section className="rounded-2xl border border-border bg-card p-6 sm:p-7">
           <h3 className="flex items-center gap-2.5 font-display text-lg font-bold text-foreground">
-            <Sparkles className="size-5 text-accent" />
+            <Sparkles className="size-5text-gray-400" />
             Skills y Tecnologías
           </h3>
           <div className="mt-6 flex flex-col gap-5">

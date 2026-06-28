@@ -21,15 +21,16 @@ export function ProjectGallery({
 
   return (
     <div>
-      <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
+      <div className="relative overflow-hidden rounded-2xl border border-border bg-muted">
         <Image
           src={images[index] || '/placeholder.svg'}
           alt={`${title} — captura ${index + 1}`}
           width={1280}
           height={720}
-          className="aspect-video w-full object-cover"
+          className="h-[520px] w-full object-contain p-4"
           priority
         />
+
         {total > 1 && (
           <>
             <button
@@ -40,6 +41,7 @@ export function ProjectGallery({
             >
               <ChevronLeft className="size-5" />
             </button>
+
             <button
               type="button"
               onClick={() => go(1)}
@@ -56,12 +58,12 @@ export function ProjectGallery({
         <div className="mt-4 grid grid-cols-4 gap-4">
           {images.map((img, i) => (
             <button
-              key={img}
+              key={`${img}-${i}`}
               type="button"
               onClick={() => setIndex(i)}
               aria-label={`Ver captura ${i + 1}`}
               className={cn(
-                'overflow-hidden rounded-xl border transition-colors',
+                'overflow-hidden rounded-xl border bg-muted transition-colors',
                 i === index
                   ? 'border-accent ring-1 ring-accent'
                   : 'border-border opacity-70 hover:opacity-100'
@@ -72,7 +74,7 @@ export function ProjectGallery({
                 alt={`${title} miniatura ${i + 1}`}
                 width={320}
                 height={180}
-                className="aspect-video w-full object-cover"
+                className="aspect-video w-full object-contain p-2"
               />
             </button>
           ))}

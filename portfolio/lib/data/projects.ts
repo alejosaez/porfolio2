@@ -131,37 +131,37 @@ export const projects: Project[] = [
       'Despliegue serverless y conexión a PostgreSQL',
     ],
   },
-  {
-    slug: 'visibly-mobile',
-    title: 'Visibly Mobile',
-    category: 'Mobile Development',
-    shortDescription:
-      'Aplicación móvil para gestión de exámenes ópticos. Desarrollada con React Native, Expo y TypeScript.',
-    description:
-      'Aplicación móvil para gestión de exámenes ópticos. Desarrollada con React Native, Expo y TypeScript.',
-    tags: ['React Native', 'Expo', 'TypeScript', 'Zustand'],
-    liveUrl: '#',
-    repoUrl: '#',
-    role: 'Mobile Developer',
-    roleDescription:
-      'Desarrollo de la aplicación móvil multiplataforma, gestión de estado y experiencia de usuario.',
-    duration: 'May 2023 – Ago 2023 (4 meses)',
-    client: 'Visibly',
-    images: ['/projects/', '/projects/chef1.png'],
-    features: [
-      'Gestión de exámenes ópticos',
-      'Aplicación multiplataforma con Expo',
-      'Gestión de estado con Zustand',
-      'Interfaz fluida y accesible',
-    ],
-    about:
-      'Aplicación móvil multiplataforma para gestionar exámenes ópticos, construida con React Native y Expo, con foco en una experiencia de usuario fluida.',
-    built: [
-      'UI de la aplicación con React Native',
-      'Gestión de estado con Zustand',
-      'Flujos de exámenes y resultados',
-    ],
-  },
+  // {
+  //   slug: 'visibly-mobile',
+  //   title: 'Visibly Mobile',
+  //   category: 'Mobile Development',
+  //   shortDescription:
+  //     'Aplicación móvil para gestión de exámenes ópticos. Desarrollada con React Native, Expo y TypeScript.',
+  //   description:
+  //     'Aplicación móvil para gestión de exámenes ópticos. Desarrollada con React Native, Expo y TypeScript.',
+  //   tags: ['React Native', 'Expo', 'TypeScript', 'Zustand'],
+  //   liveUrl: '#',
+  //   repoUrl: '#',
+  //   role: 'Mobile Developer',
+  //   roleDescription:
+  //     'Desarrollo de la aplicación móvil multiplataforma, gestión de estado y experiencia de usuario.',
+  //   duration: 'May 2023 – Ago 2023 (4 meses)',
+  //   client: 'Visibly',
+  //   images: ['/projects/', '/projects/chef1.png'],
+  //   features: [
+  //     'Gestión de exámenes ópticos',
+  //     'Aplicación multiplataforma con Expo',
+  //     'Gestión de estado con Zustand',
+  //     'Interfaz fluida y accesible',
+  //   ],
+  //   about:
+  //     'Aplicación móvil multiplataforma para gestionar exámenes ópticos, construida con React Native y Expo, con foco en una experiencia de usuario fluida.',
+  //   built: [
+  //     'UI de la aplicación con React Native',
+  //     'Gestión de estado con Zustand',
+  //     'Flujos de exámenes y resultados',
+  //   ],
+  // },
   {
     slug: 'e-commerce-api',
     title: 'E-Commerce API',
@@ -209,7 +209,7 @@ export const projects: Project[] = [
       'Diseño y construcción de workflows automatizados e integraciones mediante webhooks.',
     duration: 'Oct 2022 – Ene 2023 (4 meses)',
     client: 'Cliente privado',
-    images: ['/projects/flow-n8n2.jpeg'],
+    images: ['/projects/ProcesamientoAutomaticodeFacturas.png'],
     features: [
       'Workflows automatizados con n8n',
       'Integración mediante Webhooks',
@@ -345,37 +345,247 @@ export const projects: Project[] = [
     'Optimización de rendimiento, experiencia de usuario y posicionamiento web',
   ],
 },
+  // {
+  //   slug: 'chat-app',
+  //   title: 'Chat App',
+  //   category: 'Mobile Development',
+  //   shortDescription:
+  //     'Aplicación de mensajería en tiempo real con WebSockets, notificaciones push y almacenamiento local.',
+  //   description:
+  //     'Aplicación de mensajería en tiempo real con WebSockets, notificaciones push y almacenamiento local.',
+  //   tags: ['React Native', 'WebSockets', 'Expo', 'SQLite'],
+  //   liveUrl: '#',
+  //   repoUrl: '#',
+  //   role: 'Mobile Developer',
+  //   roleDescription:
+  //     'Desarrollo de la aplicación de mensajería, conexión en tiempo real y notificaciones.',
+  //   duration: 'Feb 2022 – May 2022 (4 meses)',
+  //   client: 'Cliente privado',
+  //   images: ['/projects/', '/projects/chef2.png'],
+  //   features: [
+  //     'Mensajería en tiempo real',
+  //     'Notificaciones push',
+  //     'Almacenamiento local de mensajes',
+  //     'Conexión vía WebSockets',
+  //   ],
+  //   about:
+  //     'Aplicación de mensajería en tiempo real con soporte para notificaciones push y almacenamiento local de conversaciones, construida con React Native.',
+  //   built: [
+  //     'Mensajería en tiempo real con WebSockets',
+  //     'Notificaciones push',
+  //     'Persistencia local con SQLite',
+  //   ],
+  // },
+  //MOBILE
   {
-    slug: 'chat-app',
-    title: 'Chat App',
-    category: 'Mobile Development',
-    shortDescription:
-      'Aplicación de mensajería en tiempo real con WebSockets, notificaciones push y almacenamiento local.',
-    description:
-      'Aplicación de mensajería en tiempo real con WebSockets, notificaciones push y almacenamiento local.',
-    tags: ['React Native', 'WebSockets', 'Expo', 'SQLite'],
-    liveUrl: '#',
-    repoUrl: '#',
-    role: 'Mobile Developer',
-    roleDescription:
-      'Desarrollo de la aplicación de mensajería, conexión en tiempo real y notificaciones.',
-    duration: 'Feb 2022 – May 2022 (4 meses)',
-    client: 'Cliente privado',
-    images: ['/projects/', '/projects/chef2.png'],
-    features: [
-      'Mensajería en tiempo real',
-      'Notificaciones push',
-      'Almacenamiento local de mensajes',
-      'Conexión vía WebSockets',
-    ],
-    about:
-      'Aplicación de mensajería en tiempo real con soporte para notificaciones push y almacenamiento local de conversaciones, construida con React Native.',
-    built: [
-      'Mensajería en tiempo real con WebSockets',
-      'Notificaciones push',
-      'Persistencia local con SQLite',
-    ],
-  },
+  slug: 'finrecover-ui-ux-rebranding',
+  title: 'FinRecover UI/UX Rebranding',
+  category: 'Mobile Development',
+  shortDescription:
+    'Rediseño UI/UX mobile para una aplicación financiera, creando una nueva identidad visual, paleta de colores, componentes y pantallas optimizadas para iPhone.',
+  description:
+    'Proyecto de rebranding UI/UX para una app financiera mobile. Se trabajó en la actualización visual de pantallas clave, definición de paleta de colores, jerarquía visual, componentes reutilizables y adaptación del diseño a una experiencia mobile moderna.',
+  tags: [
+    'UI/UX',
+    'Mobile Design',
+    'React Native',
+    'Expo',
+    'Figma',
+    'Design System',
+  ],
+  liveUrl: '#',
+  repoUrl: '#',
+  role: 'UI/UX Designer & Mobile Developer',
+  roleDescription:
+    'Diseñé nuevas propuestas visuales para las pantallas principales de la aplicación, definí la línea estética del rebranding y preparé la base visual para su implementación en React Native.',
+  duration: 'Jun 2026 – Jul 2026',
+  client: 'Jude M. Loza',
+  images: [
+    '/projects/4-design-option-D1.PNG',
+    '/projects/4-design-option-D2.PNG',
+    '/projects/4-design-option-D3.PNG',
+     '/projects/4-design-option-D4.PNG',
+      '/projects/4-design-option-D5.PNG',
+       '/projects/4-design-option-D6.PNG',
+        '/projects/4-design-option-D7.PNG',
+         '/projects/4-design-option-D8.PNG',
+          '/projects/4-design-option-D9.PNG',
+           '/projects/4-design-option-D10.PNG',
+            '/projects/4-design-option-D11.PNG',
+             '/projects/4-design-option-D12.PNG',
+  ],
+  features: [
+    'Rediseño visual de pantallas mobile',
+    'Definición de paleta de colores y estilo visual',
+    'Diseño responsive orientado a iPhone 14 Pro Max',
+    'Rebranding de pantallas de autenticación',
+    'Rebranding de dashboard, profile, transactions y plan screens',
+    'Propuestas visuales comparativas para validación con cliente',
+    'Optimización de jerarquía visual y experiencia de usuario',
+  ],
+  about:
+    'FinRecover UI/UX Rebranding fue un proyecto enfocado en modernizar la experiencia visual de una aplicación financiera mobile. El trabajo consistió en generar diferentes propuestas de diseño, seleccionar una línea visual junto al cliente y extender ese estilo al resto de las pantallas principales. El objetivo fue lograr una interfaz más clara, profesional y consistente, manteniendo la identidad de marca y preparando el producto para una implementación escalable en React Native.',
+  built: [
+    'Exploración de estilos visuales y moodboards de referencia',
+    'Diseño de pantallas mobile para iPhone 14 Pro Max',
+    'Rebranding de login, welcome y register',
+    'Rediseño de dashboard, financial basics, transactions y profile',
+    'Definición de componentes visuales reutilizables',
+    'Ajustes de colores, tipografía, espaciado y jerarquía',
+    'Preparación visual para implementación en React Native y Expo',
+  ],
+},
+{
+  slug: 'poolso-finance-platform',
+  title: 'Poolso - Intelligent Expense Management Platform',
+  category: 'Fullstack Development',
+  shortDescription:
+    'Plataforma de gestión de gastos empresariales impulsada por IA, desarrollada para modernizar procesos financieros y automatizar el procesamiento de comprobantes.',
+
+  description:
+    'Lideré el desarrollo de un MVP desde cero, migrando una solución legacy en Power Apps hacia una arquitectura moderna basada en React Native y NestJS. Diseñé la arquitectura técnica, la automatización de procesos con IA y la integración de servicios cloud y herramientas de analítica.',
+
+  tags: [
+    'React Native',
+    'NestJS',
+    'TypeScript',
+    'PostgreSQL',
+    'n8n',
+    'OpenAI',
+    'Azure Blob Storage',
+    'Power BI',
+    'Power Automate',
+    'CI/CD',
+  ],
+
+  liveUrl: '#',
+  repoUrl: '#',
+
+  role: 'Tech Lead & Full Stack Consultant',
+
+  roleDescription:
+    'Responsable del diseño de arquitectura, liderazgo técnico, desarrollo full stack y definición de la estrategia de automatización e integración con inteligencia artificial.',
+
+  duration: 'Junio 2025 – Diciembre 2025',
+
+  client: 'Poolso (Chile)',
+
+  images: [
+    '/projects/rebranding-d-poolso1.png',
+    '/projects/rebranding-d-poolso2.png',
+  
+  ],
+
+  features: [
+    'Gestión de gastos empresariales',
+    'Procesamiento automático de comprobantes mediante IA',
+    'Extracción estructurada de datos con LLMs',
+    'Almacenamiento de documentos en Azure Blob Storage',
+    'Dashboards y analítica con Power BI',
+    'Automatización de procesos con n8n y Power Automate',
+    'Arquitectura escalable basada en microservicios',
+    'Pipelines CI/CD y testing automatizado',
+  ],
+
+  about:
+    'Poolso es una plataforma de gestión financiera orientada a equipos empresariales, diseñada para simplificar el control de gastos y reducir tareas manuales mediante automatización e inteligencia artificial. El proyecto implicó la migración de una solución legacy hacia una arquitectura moderna y escalable, incorporando procesamiento inteligente de comprobantes, integraciones cloud y herramientas de analítica.',
+
+  built: [
+    'Diseño de la arquitectura técnica del MVP',
+    'Desarrollo del backend con NestJS y TypeScript',
+    'Desarrollo de la aplicación móvil con React Native',
+    'Implementación de automatización de comprobantes con OpenAI',
+    'Integración de flujos de trabajo con n8n y Power Automate',
+    'Integración con Azure Blob Storage y Power BI',
+    'Implementación de pipelines CI/CD y testing automatizado',
+    'Definición de estándares de desarrollo y liderazgo técnico del proyecto',
+  ],
+},
+//IA N8N
+{
+  slug: 'slack-ai-notifier-n8n',
+  title: 'Slack AI Notifier',
+  category: 'IA – n8n',
+  shortDescription:
+    'Workflow automatizado con n8n que recibe mensajes por webhook, los procesa con IA y envía notificaciones inteligentes a Slack.',
+  description:
+    'Automatización construida con n8n para recibir mensajes desde un webhook, normalizar el payload, procesar el contenido con OpenAI y enviar una notificación estructurada a un canal de Slack.',
+  tags: ['n8n', 'OpenAI', 'Slack API', 'Webhooks', 'Automation'],
+  liveUrl: '#',
+  repoUrl: '#',
+  role: 'Automation Engineer',
+  roleDescription:
+    'Diseñé el flujo de automatización, normalización de datos, integración con OpenAI y envío de notificaciones a Slack mediante credenciales y variables de entorno.',
+  duration: '2024',
+  client: 'Proyecto de automatización',
+  images: ['/projects/flown8n-1.jpeg'],
+  features: [
+    'Recepción de mensajes mediante webhook',
+    'Normalización del payload entrante',
+    'Procesamiento del mensaje con OpenAI',
+    'Generación automática de respuesta/resumen',
+    'Envío de notificaciones a Slack',
+    'Respuesta automática al webhook con estado de procesamiento',
+  ],
+  about:
+    'Slack AI Notifier es un flujo automatizado diseñado para procesar mensajes entrantes desde un webhook, aplicar inteligencia artificial para generar una respuesta o resumen, y notificar al equipo mediante Slack. El objetivo fue reducir tareas manuales y centralizar alertas importantes en un canal operativo.',
+  built: [
+    'Webhook de entrada para recepción de mensajes',
+    'Nodo de normalización y limpieza de datos',
+    'Integración con OpenAI Chat Model',
+    'Construcción de respuesta estructurada',
+    'Integración con Slack para envío de mensajes',
+    'Manejo de variables de entorno y credenciales',
+    'Respuesta final al webhook con status success',
+  ],
+},
+{
+  slug: 'appointment-scheduling-n8n',
+  title: 'Gestión de Agendamiento de Citas',
+  category: 'IA – n8n',
+  shortDescription:
+    'Workflow inteligente con n8n para recibir solicitudes de citas, validar disponibilidad en Google Calendar y confirmar automáticamente por email o Slack.',
+  description:
+    'Automatización de agendamiento de citas construida con n8n, Google Calendar, OpenAI y notificaciones por email/Slack. El flujo interpreta solicitudes, verifica disponibilidad, crea eventos y envía confirmaciones automáticas.',
+  tags: [
+    'n8n',
+    'OpenAI',
+    'Google Calendar',
+    'Email Automation',
+    'Slack',
+    'Webhooks',
+  ],
+  liveUrl: '#',
+  repoUrl: '#',
+  role: 'Automation Engineer',
+  roleDescription:
+    'Diseñé un flujo completo de automatización para interpretar solicitudes de agenda, validar datos, consultar disponibilidad, crear eventos en Google Calendar y enviar confirmaciones automáticas.',
+  duration: '2024',
+  client: 'Proyecto de automatización',
+  images: ['/projects/flow-n8n2.jpeg'],
+  features: [
+    'Recepción de solicitudes de cita mediante webhook',
+    'Validación y extracción de datos del payload',
+    'Interpretación de solicitudes con OpenAI',
+    'Verificación de disponibilidad en Google Calendar',
+    'Creación automática de eventos',
+    'Sugerencia de horarios alternativos si no hay disponibilidad',
+    'Confirmación automática por email',
+    'Notificación interna por Slack',
+  ],
+  about:
+    'Este workflow permite automatizar el proceso de agendamiento de citas desde una solicitud entrante. El flujo interpreta el mensaje del usuario, extrae datos relevantes, consulta la disponibilidad en Google Calendar y decide si crear el evento o sugerir alternativas. Además, envía confirmaciones por email y notificaciones internas por Slack.',
+  built: [
+    'Webhook inicial para recibir solicitudes de agenda',
+    'Validación y normalización de datos de entrada',
+    'Integración con OpenAI para interpretar mensajes',
+    'Consulta de eventos disponibles en Google Calendar',
+    'Condicional de disponibilidad mediante nodo IF',
+    'Creación automática de eventos en Google Calendar',
+    'Envío de confirmaciones y alternativas por email',
+    'Notificación final al equipo mediante Slack',
+  ],
+},
 ]
 
 export function getProject(slug: string) {

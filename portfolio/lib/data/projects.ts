@@ -3,6 +3,7 @@ export type ProjectCategory =
   | 'IA – n8n'
   | 'Backend Development'
   | 'Mobile Development'
+  | 'QA Automation & DevOps'
 
 export interface Project {
   slug: string
@@ -28,6 +29,7 @@ export const categories: ProjectCategory[] = [
   'IA – n8n',
   'Backend Development',
   'Mobile Development',
+  'QA Automation & DevOps',
 ]
 
 export const projects: Project[] = [
@@ -85,7 +87,7 @@ export const projects: Project[] = [
       'Diseño de flujos de automatización, integración de modelos de IA y conexión de múltiples servicios externos.',
     duration: 'Ene 2024 – Abr 2024 (4 meses)',
     client: 'Cliente privado',
-    images: ['/projects/img-TechStore.jpeg', '/projects/img-TeachStore2.jpeg'],
+    images: ['/projects/automatizacionAtencionAlCliente.png','/projects/img-TechStore.jpeg', '/projects/img-TeachStore2.jpeg', ],
     features: [
       'Flujos automatizados con n8n',
       'Integración con la API de WhatsApp',
@@ -116,7 +118,7 @@ export const projects: Project[] = [
       'Diseño e implementación del servicio de autenticación, seguridad y despliegue serverless.',
     duration: 'Sep 2023 – Dic 2023 (4 meses)',
     client: 'Cliente privado',
-    images: ['/projects/chef2.png',],
+    images: ['/projects/authservice.png','/projects/chef2.png',],
     features: [
       'Autenticación basada en JWT',
       'Control de roles y permisos',
@@ -586,6 +588,68 @@ export const projects: Project[] = [
     'Notificación final al equipo mediante Slack',
   ],
 },
+
+//GITHUB ACTIONS
+{
+  slug: 'qa-automation-reporting-platform',
+  title: 'QA Automation Reporting Platform',
+category: 'QA Automation & DevOps',
+  shortDescription:
+    'Sistema automatizado de reporting para QA que generaba históricos de ejecuciones, documentación en Confluence y creación automática de tickets en Jira mediante GitHub Actions.',
+
+  description:
+    'Desarrollé un flujo de automatización para el equipo de QA que permitía procesar los resultados de las ejecuciones automáticas de Playwright, generar documentación histórica en Confluence y reportar incidencias automáticamente en Jira. La solución fue implementada mediante GitHub Actions y scripts en Node.js, reduciendo el trabajo manual y mejorando la trazabilidad de las pruebas.',
+
+  tags: [
+    'GitHub Actions',
+    'Node.js',
+    'Playwright',
+    'TypeScript',
+    'Confluence API',
+    'Jira API',
+    'CI/CD',
+    'QA Automation',
+  ],
+
+  liveUrl: '#',
+  repoUrl: '#',
+
+  role: 'QA Automation Engineer',
+
+  roleDescription:
+    'Diseño e implementación de pipelines de automatización para generación de reportes, documentación y gestión automática de incidencias.',
+
+  duration: '1 año',
+
+  client: 'Visibly',
+
+  images: [
+    '/projects/QAAutomation&DevOps.png',
+  ],
+
+  features: [
+    'Ejecución automática de suites de Playwright',
+    'Generación de históricos de ejecuciones',
+    'Creación automática de documentación en Confluence',
+    'Reporte automático de incidencias en Jira',
+    'Integración con APIs de Atlassian',
+    'Automatización mediante GitHub Actions',
+    'Centralización de resultados de QA',
+  ],
+
+  about:
+    'La solución fue creada para reducir el trabajo manual del equipo de QA y mejorar la visibilidad de las ejecuciones automatizadas. Cada pipeline procesaba los resultados de las pruebas, generaba documentación histórica en Confluence y reportaba automáticamente las incidencias detectadas en Jira, permitiendo un seguimiento más eficiente y una mejor trazabilidad de los defectos.',
+
+  built: [
+    'Desarrollo de workflows en GitHub Actions',
+    'Implementación de scripts en Node.js y TypeScript',
+    'Integración con las APIs de Jira y Confluence',
+    'Procesamiento de resultados de Playwright',
+    'Generación automática de históricos y reportes',
+    'Creación automática de tickets de incidencias',
+    'Automatización de procesos de QA y documentación',
+  ],
+}
 ]
 
 export function getProject(slug: string) {

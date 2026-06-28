@@ -4,6 +4,7 @@ import {
   Sparkles,
   Server,
   Smartphone,
+  GitBranchPlusIcon,
 } from 'lucide-react'
 import type { ProjectCategory } from '@/lib/data/projects'
 import { cn } from '@/lib/utils'
@@ -13,6 +14,7 @@ const iconMap = {
   'IA – n8n': Sparkles,
   'Backend Development': Server,
   'Mobile Development': Smartphone,
+'QA Automation & DevOps':GitBranchPlusIcon
 }
 
 export function CategoryIcon({

@@ -1,12 +1,12 @@
 export const profile = {
   name: "Alejo Saez",
   firstName: "Alejo",
-  role: "Full Stack Developer",
-  tagline: "Diseño y código para la web",
+  role: "Full Stack Developer | AI Automation & Mobile Solutions",
+  tagline: "Construyo productos web, mobile y automatizaciones inteligentes",
   shortBio:
-    "Desarrollador de software especializado en desarrollo Full Stack con experiencia en Next.js, Node.js y tecnologías web modernas.",
+    "Desarrollador Full Stack con experiencia en aplicaciones web y móviles, automatización de procesos, integraciones con APIs e implementación de soluciones basadas en IA.",
   longBio:
-    "Disfruto convertir ideas en productos reales. Apasionado por el código limpio, la resolución de problemas y la construcción de experiencias digitales significativas.",
+    "Disfruto convertir ideas en productos reales, combinando desarrollo web, mobile, backend e inteligencia artificial. Me enfoco en construir soluciones útiles, escalables y bien estructuradas, con especial interés en automatización de procesos, integraciones y experiencias digitales modernas.",
   location: "La Plata (Disponible para trabajo remoto)",
   email: "alejosaezgebicki@gmail.com",
   github: "github.com/alejosaez",
@@ -16,12 +16,12 @@ export const profile = {
   whatsapp: "+54 9 2241587061 (ARG)",
   whatsappUrl:
     "https://wa.me/5492241587061?text=Hola%20Alejo,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte.",
-  avatar: "/profile.png",
+  avatar: "/projects/fotoCV.jpeg",
 };
 
 export const stats = [
   { label: "Proyectos en GitHub", value: "20+", icon: "github" },
-  { label: "Seguidores en LinkedIn", value: "1500+", icon: "linkedin" },
+  { label: "Seguidores en LinkedIn", value: "1200+", icon: "linkedin" },
   { label: "WhatsApp", value: "24×7", icon: "message" },
 ];
 
@@ -33,6 +33,13 @@ export const navItems = [
 ];
 
 export const education = [
+  {
+    period: "Abril 2026 – Actualidad",
+    title: "Backend Java Developer",
+    institution: "Hyperskill / JetBrains Academy",
+    detail:
+      "Formación práctica basada en proyectos en Java, Spring Boot, programación orientada a objetos, APIs REST, bases de datos y desarrollo backend. Plataforma educativa de JetBrains, creadora de IntelliJ IDEA y Kotlin.",
+  },
   {
     period: "Febrero 2024 – Octubre 2024",
     title: "Full Stack Developer",
@@ -47,41 +54,90 @@ export const education = [
     detail:
       "Cursos especializados en testing automatizado, APIs, CI/CD, arquitectura backend y herramientas cloud.",
   },
-  {
-    period: "2025 – Actualidad",
-    title: "Backend Java Developer",
-    institution: "Hyperskill / JetBrains Academy",
-    detail:
-      "Formación práctica basada en proyectos en Java, Spring Boot, programación orientada a objetos, APIs REST, bases de datos y desarrollo backend. Plataforma educativa de JetBrains, creadora de IntelliJ IDEA y Kotlin.",
-  },
 ];
 
 export const experience = [
   {
-    period: "Jul 2023 – Presente",
-    title: "Full Stack Developer",
-    company: "Freelance",
+    period: 'Jun 2025 – Presente',
+    title: 'Full Stack & QA Automation Developer',
+    company: 'Visibly (USA)',
     description:
-      "Desarrollo de aplicaciones web para clientes de distintos dominios. Trabajo con Next.js, Node.js y stacks modernos.",
-    duration: "1 año 10 meses",
+      'Desarrollo de soluciones Full Stack y automatización QA para aplicaciones Shopify. Diseño de suites E2E con Playwright, desarrollo de utilidades en Node.js, integración con Jira y Confluence, automatización de pipelines CI/CD e implementación de estrategias de IA y Prompt Engineering.',
+    duration: 'Actualidad',
+    technologies: [
+      'Node.js',
+      'TypeScript',
+      'Playwright',
+      'Shopify',
+      'AWS CloudWatch',
+      'Jira API',
+      'Confluence API',
+      'CI/CD',
+      'OpenAI',
+    ],
   },
   {
-    period: "Ene 2023 – Jun 2023",
-    title: "Backend Developer Intern",
-    company: "TechVeda Solutions",
+    period: 'Jun 2025 – Dic 2025',
+    title: 'Tech Lead & Full Stack Developer',
+    company: 'Poolso (Chile)',
     description:
-      "Trabajé en APIs REST, diseño de bases de datos y microservicios usando Node.js y PostgreSQL.",
-    duration: "6 meses",
+      'Lideré el desarrollo de un MVP desde cero, migrando una solución legacy hacia una arquitectura moderna basada en NestJS, React Native y PostgreSQL. Implementé automatización con IA, n8n, Azure Blob Storage, Power BI y pipelines CI/CD.',
+    duration: '6 meses',
+    technologies: [
+      'NestJS',
+      'React Native',
+      'TypeScript',
+      'PostgreSQL',
+      'n8n',
+      'OpenAI',
+      'Azure Blob Storage',
+      'Power BI',
+      'CI/CD',
+    ],
   },
   {
-    period: "Jun 2022 – Dic 2022",
-    title: "Web Developer Intern",
-    company: "CodeClause",
+    period: 'Feb 2024 – Jun 2025',
+    title: 'Full Stack Developer',
+    company: 'Software Factory AI (LATAM)',
     description:
-      "Desarrollé y mantuve aplicaciones web usando JavaScript, React.js y Tailwind CSS.",
-    duration: "7 meses",
+      'Desarrollé sistemas Full Stack y arquitecturas basadas en microservicios utilizando Node.js, Python, React y Next.js. Integré modelos de IA, soluciones RAG, automatizaciones con n8n y servicios cloud en AWS.',
+    duration: '1 año 5 meses',
+    technologies: [
+      'Node.js',
+      'Python',
+      'React',
+      'Next.js',
+      'OpenAI',
+      'Gemini',
+      'RAG',
+      'n8n',
+      'AWS',
+      'Docker',
+      'Microservicios',
+    ],
   },
-];
+  {
+    period: 'Abr 2021 – Oct 2024',
+    title: 'Full Stack Consultant',
+    company: 'DevLabs (LATAM / USA / EU)',
+    description:
+      'Desarrollé plataformas SaaS y aplicaciones web utilizando React, Next.js, Node.js y TypeScript. Implementé APIs REST, autenticación JWT/OAuth, integraciones con Shopify, testing automatizado y flujos CI/CD.',
+    duration: '3 años 7 meses',
+    technologies: [
+      'React',
+      'Next.js',
+      'Node.js',
+      'TypeScript',
+      'APIs REST',
+      'Shopify',
+      'JWT',
+      'OAuth',
+      'Jest',
+      'Cypress',
+      'CI/CD',
+    ],
+  },
+]
 
 export const skillGroups = [
   {
@@ -116,6 +172,7 @@ export const skillGroups = [
       "Prisma",
       "JWT",
       "Zod",
+      "java",
       "talwindcss",
       "n8n",
       "IA",

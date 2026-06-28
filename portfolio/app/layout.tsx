@@ -17,10 +17,27 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: 'Alejo Saez — Diseño y código para la web',
+  title: 'Alejo Saez | Full Stack Developer & AI Automation',
   description:
-    'Portfolio de Alejo Saez, desarrollador de software especializado en desarrollo Full Stack con Next.js, Node.js y tecnologías web modernas.',
-  generator: 'v0.app',
+    'Portfolio de Alejo Saez, desarrollador Full Stack especializado en aplicaciones web y mobile, backend, automatización de procesos, integraciones con APIs e inteligencia artificial.',
+  authors: [{ name: 'Alejo Saez' }],
+  creator: 'Alejo Saez',
+    icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+  },
+  keywords: [
+    'Alejo Saez',
+    'Full Stack Developer',
+    'React',
+    'Next.js',
+    'Node.js',
+    'NestJS',
+    'React Native',
+    'AI Automation',
+    'n8n',
+    'Portfolio',
+  ],
 }
 
 export const viewport: Viewport = {

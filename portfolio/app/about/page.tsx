@@ -17,7 +17,7 @@ import { profile, education, experience, skillGroups } from '@/lib/data/profile'
 
 const heroStats = [
   { value: '20+', label: 'Proyectos en GitHub', icon: Code2 },
-  { value: '1500+', label: 'Seguidores en LinkedIn', icon: Users },
+  { value: '1200+', label: 'Seguidores en LinkedIn', icon: Users },
   { value: '24×7', label: 'WhatsApp', icon: MessageCircle },
 ]
 

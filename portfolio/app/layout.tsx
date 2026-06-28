@@ -16,28 +16,98 @@ const archivo = Archivo({
   weight: ['600', '700', '800', '900'],
 })
 
+
+
 export const metadata: Metadata = {
-  title: 'Alejo Saez | Full Stack Developer & AI Automation',
-  description:
-    'Portfolio de Alejo Saez, desarrollador Full Stack especializado en aplicaciones web y mobile, backend, automatización de procesos, integraciones con APIs e inteligencia artificial.',
-  authors: [{ name: 'Alejo Saez' }],
-  creator: 'Alejo Saez',
-    icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
+  metadataBase: new URL('https://www.asaezx.com'),
+
+  title: {
+    default: 'Alejo Saez | Full Stack Developer & AI Automation Engineer',
+    template: '%s | Alejo Saez',
   },
+
+  description:
+    'Desarrollador Full Stack especializado en Node.js, React, Next.js, React Native, automatización con IA, n8n y arquitecturas backend escalables. Disponible para proyectos y oportunidades remotas.',
+
+  applicationName: 'Alejo Saez Portfolio',
+
+  authors: [
+    {
+      name: 'Alejo Saez',
+      url: 'https://www.asaezx.com',
+    },
+  ],
+
+  creator: 'Alejo Saez',
+  publisher: 'Alejo Saez',
+
   keywords: [
     'Alejo Saez',
     'Full Stack Developer',
-    'React',
-    'Next.js',
-    'Node.js',
-    'NestJS',
-    'React Native',
-    'AI Automation',
-    'n8n',
+    'Software Engineer',
+    'Node.js Developer',
+    'React Developer',
+    'Next.js Developer',
+    'NestJS Developer',
+    'React Native Developer',
+    'TypeScript Developer',
+    'Backend Developer',
+    'Frontend Developer',
+    'AI Automation Engineer',
+    'n8n Developer',
+    'OpenAI Developer',
+    'JavaScript Developer',
+    'Freelance Developer',
+    'Remote Developer',
     'Portfolio',
+    'Argentina Developer',
+    'Latam Developer',
   ],
+
+  category: 'technology',
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+icons: {
+  icon: '/icon.png',
+  shortcut: '/icon.png',
+  apple: '/apple-icon.png',
+},
+  openGraph: {
+    type: 'website',
+    locale: 'es_AR',
+    url: 'https://www.asaezx.com',
+    siteName: 'Alejo Saez Portfolio',
+    title: 'Alejo Saez | Full Stack Developer & AI Automation Engineer',
+    description:
+      'Portfolio profesional de Alejo Saez. Desarrollo Full Stack, aplicaciones web y mobile, automatización con IA y soluciones backend escalables.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Alejo Saez Portfolio',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Alejo Saez | Full Stack Developer & AI Automation Engineer',
+    description:
+      'Desarrollador Full Stack especializado en Node.js, React, Next.js, React Native y automatización con IA.',
+    images: ['/og-image.png'],
+  },
 }
 
 export const viewport: Viewport = {
@@ -50,17 +120,62 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Alejo Saez',
+    url: 'https://www.asaezx.com',
+    image: 'https://www.asaezx.com/projects/fotoCV.jpeg',
+    jobTitle: 'Full Stack Developer & AI Automation Engineer',
+    description:
+      'Desarrollador Full Stack especializado en Node.js, React, Next.js, React Native, automatización con IA, n8n y arquitecturas backend escalables.',
+    email: 'mailto:alejosaezgebicki@gmail.com',
+    sameAs: [
+      'https://github.com/alejosaez',
+      'https://www.linkedin.com/in/alejo-saez-gebicki/',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'La Plata',
+      addressCountry: 'AR',
+    },
+    knowsAbout: [
+      'Node.js',
+      'TypeScript',
+      'React',
+      'Next.js',
+      'NestJS',
+      'React Native',
+      'PostgreSQL',
+      'Playwright',
+      'OpenAI',
+      'n8n',
+      'java',
+      'Automation',
+      'Backend Development',
+      'Mobile Development',
+    ],
+  }
+
   return (
     <html
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} ${archivo.variable} bg-background`}
     >
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
+
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
           <div className="flex-1">{children}</div>
           <SiteFooter />
         </div>
+
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

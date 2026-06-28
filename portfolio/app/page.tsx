@@ -6,7 +6,7 @@ import { profile } from "@/lib/data/profile";
 
 const heroStats = [
   { value: "20+", label: "Proyectos en GitHub", icon: GithubIcon },
-  { value: "1200+", label: "Seguidores en LinkedIn", icon: LinkedinIcon },
+  { value: "1200+", label: "Contactos en LinkedIn", icon: LinkedinIcon },
   { value: "24×7", label: "WhatsApp", icon: MessageCircle },
 ];
 

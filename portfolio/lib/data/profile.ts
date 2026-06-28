@@ -21,7 +21,7 @@ export const profile = {
 
 export const stats = [
   { label: "Proyectos en GitHub", value: "20+", icon: "github" },
-  { label: "Seguidores en LinkedIn", value: "1200+", icon: "linkedin" },
+  { label: "Contactos en LinkedIn", value: "1200+", icon: "linkedin" },
   { label: "WhatsApp", value: "24×7", icon: "message" },
 ];
 

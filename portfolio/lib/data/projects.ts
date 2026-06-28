@@ -413,11 +413,11 @@ export const projects: Project[] = [
     "/projects/4-design-option-D5.PNG",
     "/projects/4-design-option-D6.PNG",
     "/projects/4-design-option-D7.PNG",
-    "/projects/4-design-option-D8.PNG",
-    "/projects/4-design-option-D9.PNG",
-    "/projects/4-design-option-D10.PNG",
-    "/projects/4-design-option-D11.PNG",
-    "/projects/4-design-option-D12.PNG",
+    "/projects/4-design-option-D8.png",
+    "/projects/4-design-option-D9.png",
+    "/projects/4-design-option-D10.png",
+    "/projects/4-design-option-D11.png",
+    "/projects/4-design-option-D12.png",
   ],
 
   features: [

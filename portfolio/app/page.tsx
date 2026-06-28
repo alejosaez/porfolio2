@@ -26,23 +26,22 @@ export default function HomePage() {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-       <Button asChild size="lg" className="rounded-full px-6 font-semibold">
-  <a href="/projects/alejo.pdf" download="Alejo-Saez-CV.pdf">
+      <a href="/projects/alejo.pdf" download="Alejo-Saez-CV.pdf">
+  <Button size="lg" className="rounded-full px-6 font-semibold">
     <FileDown className="size-4" />
     Descargar CV
-  </a>
-</Button>
-          <Button
-            asChild
-            size="lg"
-            variant="secondary"
-            className="rounded-full px-6 font-semibold"
-          >
-            <Link href="/about">
-              <User className="size-4" />
-              Sobre mí
-            </Link>
-          </Button>
+  </Button>
+</a>
+        <Link href="/about">
+  <Button
+    size="lg"
+    variant="secondary"
+    className="rounded-full px-6 font-semibold"
+  >
+    <User className="size-4" />
+    Sobre mí
+  </Button>
+</Link>
         </div>
 
         <div className="mt-8 flex items-center gap-3 text-sm text-muted-foreground">

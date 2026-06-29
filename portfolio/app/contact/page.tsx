@@ -108,11 +108,33 @@ export default function ContactPage() {
 
           {/* Right - form */}
           <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+            {/* Calendar */}
+<div className="mt-8 rounded-2xl border border-border bg-background/40 p-4">
+  <div className="mb-4">
+    <h3 className="font-display text-xl font-bold text-foreground">
+      Agendá una llamada
+    </h3>
+    <p className="mt-1 text-sm text-muted-foreground">
+      Reservá una reunión de 30 minutos directamente desde mi calendario.
+    </p>
+  </div>
+
+  <div className="overflow-hidden rounded-xl border border-border bg-white">
+    <iframe
+      src="https://calendly.com/alejosaezgebicki/30min"
+      title="Agendar una llamada con Alejo Saez"
+      className="h-[760px] w-full"
+      loading="lazy"
+    />
+  </div>
+</div>
             <div className="flex items-start gap-4">
+              
               <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/60text-gray-400">
                 <MessageSquare className="size-5" />
               </span>
               <div>
+                
                 <h2 className="font-display text-2xl font-bold text-foreground">
                   Envía un mensaje
                 </h2>

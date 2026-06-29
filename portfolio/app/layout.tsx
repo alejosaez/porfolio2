@@ -4,7 +4,7 @@ import { Geist, Geist_Mono, Archivo } from 'next/font/google'
 import './globals.css'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
@@ -177,6 +177,7 @@ export default function RootLayout({
         </div>
 
         {process.env.NODE_ENV === 'production' && <Analytics />}
+          <GoogleAnalytics gaId="G-DDLMG53WRE" />
       </body>
     </html>
   )

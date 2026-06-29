@@ -446,7 +446,7 @@ export const projects: Project[] = [
   {
     slug: "poolso-finance-platform",
     title: "Poolso - Intelligent Expense Management Platform",
-    category: "Fullstack Development",
+    category: "Mobile Development",
     shortDescription:
       "Plataforma de gestión de gastos empresariales impulsada por IA, desarrollada para modernizar procesos financieros y automatizar el procesamiento de comprobantes.",
 

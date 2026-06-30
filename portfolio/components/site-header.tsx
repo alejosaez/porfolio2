@@ -21,15 +21,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className="hidden flex-1 items-center justify-center md:flex">
-          <div className="flex w-full max-w-xs items-center gap-2 rounded-lg border border-border bg-secondary/60 px-3 py-1.5 text-sm text-muted-foreground">
-            <Search className="size-4" />
-            <span className="flex-1">Buscar...</span>
-            <kbd className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px]">
-              ⌘ K
-            </kbd>
-          </div>
-        </div>
+      
 
         <nav className="flex items-center gap-1">
           {navItems.map((item) => {
